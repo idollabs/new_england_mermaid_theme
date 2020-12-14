@@ -1,27 +1,90 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Header from './Header';
+import ShortAbout from './ShortAbout';
+import BlogGrid from './BlogGrid';
 
-function App() {
+const App = () => {
   return (
-    <div className='App'>
-      <header className='App-header'>
-        <img src={logo} className='App-logo' alt='logo' />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className='App-link'
-          href='https://reactjs.org'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <ShortAbout />
+      <BlogGrid />
+    </>
   );
-}
+};
+
+const TestBody = () => {
+  return (
+    <>
+      <main className='body'>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+          amet inventore ratione ad, a sit. Adipisci vel in eum quisquam et.
+          Illum libero necessitatibus perspiciatis. Lorem, ipsum dolor sit amet
+          consectetur adipisicing elit. Cupiditate amet inventore ratione ad, a
+          sit. Adipisci vel in eum quisquam et. Illum libero necessitatibus
+          perspiciatis. Lorem, ipsum dolor sit amet consectetur adipisicing
+          elit. Cupiditate amet inventore ratione ad, a sit. Adipisci vel in eum
+          quisquam et. Illum libero necessitatibus perspiciatis. Lorem, ipsum
+          dolor sit amet consectetur adipisicing elit. Cupiditate amet inventore
+          ratione ad, a sit. Adipisci vel in eum quisquam et. Illum libero
+          necessitatibus perspiciatis.
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+          amet inventore ratione ad, a sit. Adipisci vel in eum quisquam et.
+          Illum libero necessitatibus perspiciatis. Lorem, ipsum dolor sit amet
+          consectetur adipisicing elit. Cupiditate amet inventore ratione ad, a
+          sit. Adipisci vel in eum quisquam et. Illum libero necessitatibus
+          perspiciatis. Lorem, ipsum dolor sit amet consectetur adipisicing
+          elit. Cupiditate amet inventore ratione ad, a sit. Adipisci vel in eum
+          quisquam et. Illum libero necessitatibus perspiciatis. Lorem, ipsum
+          dolor sit amet consectetur adipisicing elit. Cupiditate amet inventore
+          ratione ad, a sit. Adipisci vel in eum quisquam et. Illum libero
+          necessitatibus perspiciatis.
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+          amet inventore ratione ad, a sit. Adipisci vel in eum quisquam et.
+          Illum libero necessitatibus perspiciatis. Lorem, ipsum dolor sit amet
+          consectetur adipisicing elit. Cupiditate amet inventore ratione ad, a
+          sit. Adipisci vel in eum quisquam et. Illum libero necessitatibus
+          perspiciatis. Lorem, ipsum dolor sit amet consectetur adipisicing
+          elit. Cupiditate amet inventore ratione ad, a sit. Adipisci vel in eum
+          quisquam et. Illum libero necessitatibus perspiciatis. Lorem, ipsum
+          dolor sit amet consectetur adipisicing elit. Cupiditate amet inventore
+          ratione ad, a sit. Adipisci vel in eum quisquam et. Illum libero
+          necessitatibus perspiciatis.
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+          amet inventore ratione ad, a sit. Adipisci vel in eum quisquam et.
+          Illum libero necessitatibus perspiciatis. Lorem, ipsum dolor sit amet
+          consectetur adipisicing elit. Cupiditate amet inventore ratione ad, a
+          sit. Adipisci vel in eum quisquam et. Illum libero necessitatibus
+          perspiciatis. Lorem, ipsum dolor sit amet consectetur adipisicing
+          elit. Cupiditate amet inventore ratione ad, a sit. Adipisci vel in eum
+          quisquam et. Illum libero necessitatibus perspiciatis. Lorem, ipsum
+          dolor sit amet consectetur adipisicing elit. Cupiditate amet inventore
+          ratione ad, a sit. Adipisci vel in eum quisquam et. Illum libero
+          necessitatibus perspiciatis.
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+          amet inventore ratione ad, a sit. Adipisci vel in eum quisquam et.
+          Illum libero necessitatibus perspiciatis. Lorem, ipsum dolor sit amet
+          consectetur adipisicing elit. Cupiditate amet inventore ratione ad, a
+          sit. Adipisci vel in eum quisquam et. Illum libero necessitatibus
+          perspiciatis. Lorem, ipsum dolor sit amet consectetur adipisicing
+          elit. Cupiditate amet inventore ratione ad, a sit. Adipisci vel in eum
+          quisquam et. Illum libero necessitatibus perspiciatis. Lorem, ipsum
+          dolor sit amet consectetur adipisicing elit. Cupiditate amet inventore
+          ratione ad, a sit. Adipisci vel in eum quisquam et. Illum libero
+          necessitatibus perspiciatis.
+        </p>
+      </main>
+    </>
+  );
+};
 
 export default App;
-
-//note for initial commit
