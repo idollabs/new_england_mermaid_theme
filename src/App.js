@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from './Header';
-import ShortAbout from './ShortAbout';
-import BlogGrid from './BlogGrid';
+import Header from './Components/Header';
+import ShortAbout from './Components/ShortAbout';
+import BlogGrid from './Components/BlogGrid';
 
 const App = () => {
   return (

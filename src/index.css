@@ -3,6 +3,12 @@
   padding: 0;
 }
 
+/* be sure to change */
+body {
+  background-color: yellow;
+}
+
+/* header */
 header {
   position: sticky;
   width: 100%;
@@ -44,6 +50,13 @@ header .headerNav h4 {
   text-align: center;
 }
 
+header .headerNav ul {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+
+/* intro */
 .shortAbout {
   display: flex;
   background-color: yellow;
@@ -61,7 +74,7 @@ header .headerNav h4 {
 
 .shortAbout .imgContainer img {
   height: 10rem;
-  width: 10rem;
+  width: 20rem;
 }
 
 .shortAbout .textContainer {
@@ -71,6 +84,16 @@ header .headerNav h4 {
   margin-right: 2%;
   padding: 1rem;
   background-color: violet;
+}
+
+@media screen and (max-width: 800px) {
+  .shortAbout .imgContainer img {
+    height: 10rem;
+    width: 10rem;
+  }
+  .shortAbout {
+    font-size: 4vw;
+  }
 }
 
 /* Blog Grid */
