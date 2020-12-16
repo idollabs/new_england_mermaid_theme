@@ -19,11 +19,19 @@ const BlogGrid = () => {
       >
         <h1>{info}</h1>
       </div>
-      <div className='child2'>
-        <h1>Blog2</h1>
+      <div
+        className='child2'
+        onMouseEnter={handleBlogInfo}
+        onMouseLeave={handleBlogInfo}
+      >
+        <h1>{info}</h1>
       </div>
-      <div className='child3'>
-        <h1>Blog3</h1>
+      <div
+        className='child3'
+        onMouseEnter={handleBlogInfo}
+        onMouseLeave={handleBlogInfo}
+      >
+        <h1>{info}</h1>
       </div>
     </div>
   );
