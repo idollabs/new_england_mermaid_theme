@@ -1,9 +1,13 @@
 import React from 'react';
+import Image from '../images/mermaidpicrect.jpg';
+
+let headImg = Image;
 
 const Header = () => {
   return (
     <>
       <div className='topLogo'>
+        <img className='headerImg' src={headImg} />
         <h1>New England Mermaid</h1>
       </div>
       <header className='header'>

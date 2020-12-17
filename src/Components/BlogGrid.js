@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import altImg from '../images/mermaidpicrect.jpg';
+
+let image = [altImg];
 
 const BlogGrid = () => {
   const [info1, setInfo1] = useState('');
@@ -38,7 +41,10 @@ const BlogGrid = () => {
           onMouseEnter={() => handleBlogInfo(1)}
           onMouseLeave={() => handleBlogInfo(1)}
         >
-          <h1>{info1}</h1>
+          <img className='gridImg' src={image[0]} />
+          <article className='overLap'>
+            <h1>{info1}</h1>
+          </article>
         </div>
         <div className='child1B'></div>
         <div

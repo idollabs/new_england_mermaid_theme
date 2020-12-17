@@ -1,6 +1,9 @@
 :root {
   /* dark shades of primary color*/
-  --clr-background-1: yellow;
+  --clr-background-1: #dff7ff;
+  --clr-header-1: #9901ff;
+  --clr-navbar-1: #ee01ff;
+  --clr-intro-1: #04ffaf;
 }
 
 * {
@@ -11,6 +14,7 @@
 /* be sure to change */
 body {
   background-color: var(--clr-background-1);
+  font-family: sans-serif;
 }
 
 /* header */
@@ -20,10 +24,16 @@ header {
   top: 0;
 }
 
+.headerImg {
+  height: 13rem;
+  width: 100%;
+  object-fit: cover;
+}
+
 .topLogo {
   display: block;
   height: 13rem;
-  background-color: red;
+  background-color: var(--clr-header-1);
 }
 
 .topLogo h1 {
@@ -32,14 +42,14 @@ header {
   text-shadow: 0.1rem 0.1rem black;
   text-align: center;
   position: relative;
-  top: 35%;
+  top: -68%;
   margin: auto;
 }
 
 header .headerNav {
   display: block;
   height: 3rem;
-  background-color: green;
+  background-color: var(--clr-navbar-1);
   /*Position*/
 }
 
@@ -68,6 +78,12 @@ header .headerNav button {
   height: 2rem;
 }
 
+@media screen and (max-width: 700px) {
+  .topLogo h1 {
+    font-size: 7vw;
+  }
+}
+
 /* intro */
 .shortAbout {
   display: flex;
@@ -81,7 +97,7 @@ header .headerNav button {
   margin-left: 2%;
   margin-right: 1%;
   padding: 1rem;
-  background-color: violet;
+  background-color: var(--clr-intro-1);
 }
 
 .shortAbout .imgContainer img {
@@ -95,7 +111,7 @@ header .headerNav button {
   margin-left: 1%;
   margin-right: 2%;
   padding: 1rem;
-  background-color: violet;
+  background-color: var(--clr-intro-1);
 }
 
 @media screen and (max-width: 800px) {
@@ -131,6 +147,13 @@ header .headerNav button {
   /* align-content: center; */
 }
 
+.parent .gridImg {
+  width: 30.6vw;
+  height: 30.6vw;
+  object-fit: cover;
+  border-radius: 20%;
+}
+
 .parent .child1 {
   width: 30.6vw;
   height: 30.6vw;
@@ -138,7 +161,14 @@ header .headerNav button {
   order: 1;
   flex: 0 0 auto;
   /* margin: 1% 1%; */
+  border-radius: 20%;
 }
+.parent .child1 .overLap {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .parent .child1B {
   display: none;
 
@@ -152,6 +182,8 @@ header .headerNav button {
   margin-bottom: 2%;
   margin-left: 1%;
   margin-right: 1%;
+
+  border-radius: 20%;
 }
 
 .parent .child2 {
@@ -161,6 +193,7 @@ header .headerNav button {
   order: 2;
   flex: 0 0 auto;
   /* margin: 1% 1%; */
+  border-radius: 20%;
 }
 
 .parent .child2B {
@@ -175,6 +208,8 @@ header .headerNav button {
   margin-bottom: 2%;
   margin-left: 1%;
   margin-right: 1%;
+
+  border-radius: 20%;
 }
 
 .parent .child3 {
@@ -184,6 +219,8 @@ header .headerNav button {
   order: 3;
   flex: 0 0 auto;
   /* margin: 1% 1%; */
+
+  border-radius: 20%;
 }
 
 .parent .child3B {
@@ -198,6 +235,8 @@ header .headerNav button {
   margin-bottom: 2%;
   margin-left: 1%;
   margin-right: 1%;
+
+  border-radius: 20%;
 }
 
 @media screen and (max-width: 800px) {
@@ -206,6 +245,12 @@ header .headerNav button {
 
     justify-content: center;
   }
+
+  .parent .gridImg {
+    width: 15rem;
+    height: 15rem;
+  }
+
   .parent .child1 {
     width: 15rem;
     height: 15rem;
@@ -246,6 +291,10 @@ header .headerNav button {
 }
 
 @media screen and (max-width: 521px) {
+  .parent .gridImg {
+    width: 12rem;
+    height: 12rem;
+  }
   .parent .child1 {
     width: 12rem;
     height: 12rem;
@@ -272,6 +321,11 @@ header .headerNav button {
   }
 }
 @media screen and (max-width: 420px) {
+  .parent .gridImg {
+    width: 10rem;
+    height: 10rem;
+  }
+
   .parent .child1 {
     width: 10rem;
     height: 10rem;
