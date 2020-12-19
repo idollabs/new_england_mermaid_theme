@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './Components/Header';
 import ShortAbout from './Components/ShortAbout';
 import BlogGrid from './Components/BlogGrid';
+import Footer from './Components/Footer';
 
 const App = () => {
   return (
@@ -9,6 +10,7 @@ const App = () => {
       <Header />
       <ShortAbout />
       <BlogGrid />
+      <Footer />
     </>
   );
 };

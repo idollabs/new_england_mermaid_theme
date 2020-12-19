@@ -3,7 +3,7 @@ import profileImg from '../images/mermaidpicrect.jpg';
 import altImg from '../images/mermaidpic.jpg';
 
 const ShortAbout = () => {
-  const [image, setImage] = useState('');
+  const [image, setImage] = useState(altImg);
   const handleImg = () => {
     setImage(profileImg);
     const mediaQuery = window.matchMedia('(max-width: 800px)');
