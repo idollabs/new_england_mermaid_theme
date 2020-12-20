@@ -53,7 +53,9 @@ const BlogGrid = () => {
           onMouseEnter={() => handleBlogInfo(2)}
           onMouseLeave={() => handleBlogInfo(2)}
         >
-          <h1>{info2}</h1>
+          <article className='overLap'>
+            <h1>{info2}</h1>
+          </article>
         </div>
         <div className='child2B'></div>
 
@@ -63,7 +65,9 @@ const BlogGrid = () => {
           onMouseEnter={() => handleBlogInfo(3)}
           onMouseLeave={() => handleBlogInfo(3)}
         >
-          <h1>{info3}</h1>
+          <article className='overLap'>
+            <h1>{info3}</h1>
+          </article>
         </div>
         <div className='child3B'></div>
       </div>

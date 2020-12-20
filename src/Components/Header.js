@@ -7,23 +7,25 @@ const Header = () => {
   return (
     <>
       <div className='topLogo'>
-        <img className='headerImg' src={headImg} />
+        {/* <img className='headerImg' src={headImg} /> */}
         <h1>New England Mermaid</h1>
+        <div className='gradiant'></div>
       </div>
+
       <header className='header'>
         <div className='headerNav'>
           <ul>
             <li>
-              <button>Home</button>
+              <h4 className='navBtn'>Home</h4>
             </li>
             <li>
-              <button>About</button>
+              <h4 className='navBtn'>About</h4>
             </li>
             <li>
-              <button>Blog</button>
+              <h4 className='navBtn'>Blogs</h4>
             </li>
             <li>
-              <button>Contact</button>
+              <h4 className='navBtn'>Contact</h4>
             </li>
           </ul>
         </div>

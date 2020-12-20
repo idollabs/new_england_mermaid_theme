@@ -5,6 +5,7 @@ import altImg from '../images/mermaidpic.jpg';
 const ShortAbout = () => {
   const [image, setImage] = useState(altImg);
   const handleImg = () => {
+    console.log('working');
     setImage(profileImg);
     const mediaQuery = window.matchMedia('(max-width: 800px)');
     if (mediaQuery) {
@@ -18,7 +19,7 @@ const ShortAbout = () => {
   return (
     <article className='shortAbout'>
       <div className='imgContainer'>
-        <img src={handleImg} alt='' />
+        <img src={() => handleImg} alt='' />
       </div>
       <div className='textContainer'>
         <p>

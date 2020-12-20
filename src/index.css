@@ -1,11 +1,57 @@
 :root {
   /* dark shades of primary color*/
-  --clr-background-1: #dff7ff;
+  --clr-background-1: rgb(186, 202, 145);
   --clr-header-1: #9901ff;
-  --clr-navbar-1: #ee01ff;
-  --clr-intro-1: #04ffaf;
+  --clr-navbar-1: #f4f4f4;
+  --clr-intro-1: rgb(228, 213, 178);
+  --clr-intro-border-1: rgb(144, 225, 253);
   --clr-border-1: #9901ff;
-  --clr-footer-1: #ee01ff;
+  --clr-footer-1: #f4f4f4;
+
+  /* grayscale pallette */
+  --clr-white-1: #ffffff;
+  --clr-off-white-1: #f4f4f4;
+  --clr-light-gray-1: #d4d4d4;
+  --clr-light-gray-2: #b1b1b1;
+  --clr-gray-1: #818181;
+  --clr-dark-gray-1: #585858;
+  --clr-dark-gray-2: #2e2e2e;
+  --clr-black-1: #000 c;
+
+  /* pallette 1
+  --clr-peach-1: #fcd392;
+  --clr-salmon-1: #d97266;
+  --clr-pink-1: #df98f0;
+  --clr-purple-blue-1: #7e8bd9;
+  --clr-sky-blue-1: #7cfcf4; */
+
+  /* ocean pallette 1
+  --clr-dark-greenish-gray-1: #2b2f26;
+  --clr-dark-green-1: #4a5e56;
+  --clr-light-green-1: #bcc4a4;
+
+  --clr-light-tan-1: #d7d0bd;
+  --clr-medium-tan-1: #a57f5a;
+  --clr-dark-tan-1: #685c3d;
+
+  --clr-dark-grayish-blue: #4d6b7c;
+  --clr-medium-grayish-blue-2: #638598;
+  --clr-medium-grayish-blue: #6f93aa;
+  --clr-light-blue-1: #9cdaf0; */
+
+  /* ocean pallette 2 */
+  --clr-dark-greenish-gray-1: rgb(43, 51, 35);
+  --clr-dark-green-1: rgb(65, 104, 88);
+  --clr-light-green-1: rgb(186, 202, 145);
+
+  --clr-light-tan-1: rgb(228, 213, 178);
+  --clr-orange-tan-1: rgb(200, 127, 61);
+  --clr-brown-tan-1: rgb(124, 100, 45);
+
+  --clr-dark-grayish-blue: rgb(57, 113, 146);
+  --clr-medium-grayish-blue-2: rgb(76, 141, 176);
+  --clr-medium-grayish-blue: rgb(85, 156, 197);
+  --clr-light-blue-1: rgb(144, 225, 253);
 }
 
 * {
@@ -29,13 +75,23 @@ header {
 .headerImg {
   height: 13rem;
   width: 100%;
+
   object-fit: cover;
+  display: none;
 }
 
 .topLogo {
   display: block;
   height: 13rem;
   background-color: var(--clr-header-1);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(245, 246, 252, 0),
+      rgba(245, 246, 252, 0),
+      rgba(255, 255, 255, 0.73)
+    ),
+    url('images/mermaidpicrect.jpg');
+  background-size: cover;
 }
 
 .topLogo h1 {
@@ -45,6 +101,20 @@ header {
   text-align: center;
   position: relative;
   top: -68%;
+  margin: auto;
+}
+
+.gradiant {
+  display: block;
+  height: 8vw;
+  /* background-image: linear-gradient(
+    180deg,
+    rgb(44, 44, 44, 0),
+    var(--clr-navbar-1)
+  ); */
+
+  position: relative;
+  top: -8.5rem;
   margin: auto;
 }
 
@@ -75,9 +145,14 @@ header .headerNav ul {
   list-style: none;
 }
 
-header .headerNav button {
-  background-color: green;
+header .headerNav .navBtn {
+  background-color: #f4f4f4;
   height: 2rem;
+  width: 14vw;
+  height: 3rem;
+  border-left-style: solid;
+  border-right-style: solid;
+  border-width: 2px;
 }
 
 @media screen and (max-width: 700px) {
@@ -157,6 +232,7 @@ header .headerNav button {
   height: 30.6vw;
   object-fit: cover;
   border-radius: 20%;
+  display: none;
 }
 
 .parent .child1 {
@@ -168,7 +244,7 @@ header .headerNav button {
   /* margin: 1% 1%; */
   border-radius: 20%;
 }
-.parent .child1 .overLap {
+.parent .overLap {
   color: yellow;
   background-color: green;
 }
@@ -242,6 +318,38 @@ header .headerNav button {
 
   border-radius: 20%;
 }
+@media screen and (min-width: 1130px) {
+  .parent .gridImg {
+    width: 21rem;
+    height: 21rem;
+  }
+
+  .parent .child1 {
+    width: 21rem;
+    height: 21rem;
+  }
+  .parent .child2 {
+    width: 21rem;
+    height: 21rem;
+  }
+  .parent .child3 {
+    width: 21rem;
+    height: 21rem;
+  }
+
+  .parent .child1B {
+    width: 21rem;
+    height: 21rem;
+  }
+  .parent .child2B {
+    width: 21rem;
+    height: 21rem;
+  }
+  .parent .child3B {
+    width: 21rem;
+    height: 21rem;
+  }
+}
 
 @media screen and (max-width: 800px) {
   .parent {
@@ -253,10 +361,10 @@ header .headerNav button {
   .parent .gridImg {
     width: 15rem;
     height: 15rem;
-    border-top-left-radius: 20%;
+    /* border-top-left-radius: 20%;
     border-bottom-left-radius: 20%;
     border-top-right-radius: 0%;
-    border-bottom-right-radius: 0%;
+    border-bottom-right-radius: 0%; */
   }
 
   .parent .child1 {
@@ -268,10 +376,10 @@ header .headerNav button {
     margin-left: 1%;
     margin-right: 1%;
 
-    border-top-left-radius: 20%;
+    /* border-top-left-radius: 20%;
     border-bottom-left-radius: 20%;
     border-top-right-radius: 0%;
-    border-bottom-right-radius: 0%;
+    border-bottom-right-radius: 0%; */
   }
   .parent .child2 {
     width: 15rem;
@@ -282,10 +390,10 @@ header .headerNav button {
     margin-left: 1%;
     margin-right: 1%;
 
-    border-top-left-radius: 20%;
+    /* border-top-left-radius: 20%;
     border-bottom-left-radius: 20%;
     border-top-right-radius: 0%;
-    border-bottom-right-radius: 0%;
+    border-bottom-right-radius: 0%; */
   }
   .parent .child3 {
     width: 15rem;
@@ -296,32 +404,32 @@ header .headerNav button {
     margin-left: 1%;
     margin-right: 1%;
 
-    border-top-left-radius: 20%;
+    /* border-top-left-radius: 20%;
     border-bottom-left-radius: 20%;
     border-top-right-radius: 0%;
-    border-bottom-right-radius: 0%;
+    border-bottom-right-radius: 0%; */
   }
 
   .parent .child1B {
     display: block;
-    border-top-left-radius: 0%;
+    /* border-top-left-radius: 0%;
     border-bottom-left-radius: 0%;
     border-top-right-radius: 20%;
-    border-bottom-right-radius: 20%;
+    border-bottom-right-radius: 20%; */
   }
   .parent .child2B {
     display: block;
-    border-top-left-radius: 0%;
+    /* border-top-left-radius: 0%;
     border-bottom-left-radius: 0%;
     border-top-right-radius: 20%;
-    border-bottom-right-radius: 20%;
+    border-bottom-right-radius: 20%; */
   }
   .parent .child3B {
     display: block;
-    border-top-left-radius: 0%;
+    /* border-top-left-radius: 0%;
     border-bottom-left-radius: 0%;
     border-top-right-radius: 20%;
-    border-bottom-right-radius: 20%;
+    border-bottom-right-radius: 20%; */
   }
 }
 
